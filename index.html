@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade</title>
+</head>
+<body style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/1ded6316892325.562b2b3019058.jpg); text-align: center;">
+    
+    <div class="formulario">
+        <h1 style="font-family: sans-serif;">Verificação de idade</h1>
+        <p style="font-family: sans-serif;">Por favor, Insira Sua Idade</p>
+        <P>PRODUTO E SITE NÃO RECOMENDADO PARA MENORES DE IDADE!</P>
+        <input type="number" name="" id="IdadeInput">
+        <button onclick="verificarIdade()">Verificar </button>
+    </div>
+
+    <script>
+        function verificarIdade() {
+            var idade = parseInt(document.getElementById('IdadeInput').value);
+
+            if (idade >= 18) {
+                window.location.href = 'maior.html';
+            } else{
+                window.location.href ='menor.html';
+            }
+        }
+    </script>
+
+    <footer>
+        Criado Por Gustavo Soares | Gustav
+    </footer>
+
+
+    
+</body>
+</html>
